@@ -1,0 +1,714 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "AML PipelinesEndPointSubmit1.0",
+    "version": "1.0"
+  },
+"paths": {
+"/pipelines/v1/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.M
+achineLearningServices/workspaces/{workspaceName}/PipelineRuns/PipelineEndpointSubmit/Id/{id}/{pipelin
+eVersion}": {
+      "post": {
+        "tags": [
+          "PipelineRuns"
+        ],
+        "summary": "SubmitPipelineRunFromPipelineEndpointByIdAsync",
+        "description": "Submits a pipeline run using provided pipeline endpoint ID.",
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+            "description": "The subscription id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The subscription id",
+              "nullable": true
+} },
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "description": "The resource group name",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The resource group name",
+              "nullable": true
+} },
+          {
+            "name": "workspaceName",
+            "in": "path",
+            "description": "The workspace name",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The workspace name",
+              "nullable": true
+} },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The pipelineEndpoint id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The pipelineEndpoint id",
+              "nullable": true
+} },
+          {
+            "name": "parentRunId",
+            "in": "query",
+            "description": "The id of the parent run of this pipeline run, optional",
+            "schema": {
+              "type": "string",
+              "description": "The id of the parent run of this pipeline run, optional",
+              "nullable": true
+} },
+          {
+            "name": "pipelineVersion",
+             "in": "query",
+            "description": "pipeline version, optional parameter",
+            "schema": {
+              "type": "string",
+              "description": "pipeline version, optional parameter",
+              "nullable": true
+} }
+        ],
+        "requestBody": {
+          "description": "pipeline submission information",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo"
+} },
+            "application/json": {
+              "schema": {
+                "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo"
+} },
+            "text/json": {
+              "schema": {
+                "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo"
+} },
+            "application/*+json": {
+              "schema": {
+                "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo"
+} }
+} },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineRunEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineRunEntity"
+} },
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineRunEntity"
+                }
+} }
+} }
+} },
+"/pipelines/v1/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.M
+achineLearningServices/workspaces/{workspaceName}/PipelineRuns/PipelineEndpointSubmit/Name": {
+      "post": {
+        "tags": [
+          "PipelineRuns"
+        ],
+        "summary": "SubmitPipelineRunFromPipelineEndpointByNameAsync",
+        "description": "Submits a pipeline run using provided pipeline endpoint name.",
+        "parameters": [
+          {
+            "name": "subscriptionId",
+            "in": "path",
+
+             "description": "The subscription id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The subscription id",
+              "nullable": true
+} },
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "description": "The resource group name",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The resource group name",
+              "nullable": true
+} },
+          {
+            "name": "workspaceName",
+            "in": "path",
+            "description": "The workspace name",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The workspace name",
+              "nullable": true
+} },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "The pipelineEndpoint name",
+            "schema": {
+              "type": "string",
+              "description": "The pipelineEndpoint name",
+              "nullable": true
+} },
+          {
+            "name": "parentRunId",
+            "in": "query",
+            "description": "The id of the parent run of this pipeline run, optional",
+            "schema": {
+              "type": "string",
+              "description": "The id of the parent run of this pipeline run, optional",
+              "nullable": true
+} },
+          {
+            "name": "pipelineVersion",
+            "in": "query",
+            "description": "pipeline version, optional parameter",
+            "schema": {
+              "type": "string",
+              "description": "pipeline version, optional parameter",
+              "nullable": true
+} }
+        ],
+        "requestBody": {
+          "description": "pipeline submission information",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo"
+} },
+            "application/json": {
+              "schema": {
+                "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo"
+}
+
+             },
+            "text/json": {
+              "schema": {
+                "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo"
+              }
+} }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineRunEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineRunEntity"
+} },
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineRunEntity"
+                }
+} }
+} }
+} }
+  },
+  "components": {
+    "schemas": {
+      "Microsoft.Aether.AEVA.DataContracts.RunType": {
+"enum": [ 0,
+1, 2, 3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Microsoft.Aether.AEVA.DataContracts.LegacyDataPath": {
+        "type": "object",
+        "properties": {
+          "DataStoreName": {
+            "type": "string",
+            "nullable": true
+          },
+          "RelativePath": {
+            "type": "string",
+            "nullable": true
+          }
+},
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.StoredProcedureParameterType": {
+        "enum": [
+0, 1, 2, 3, 4, 5
+],
+
+         "type": "integer",
+        "format": "int32"
+      },
+      "Microsoft.Aether.AEVA.DataContracts.StoredProcedureParameter": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "nullable": true
+}, "Value": {
+            "type": "string",
+            "nullable": true
+          },
+          "Type": {
+            "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.StoredProcedureParameterType"
+          }
+},
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.SqlDataPath": {
+        "type": "object",
+        "properties": {
+          "SqlTableName": {
+            "type": "string",
+            "nullable": true
+          },
+          "SqlQuery": {
+            "type": "string",
+            "nullable": true
+          },
+          "SqlStoredProcedureName": {
+            "type": "string",
+            "nullable": true
+          },
+          "SqlStoredProcedureParams": {
+            "type": "array",
+            "items": {
+              "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.StoredProcedureParameter"
+},
+            "nullable": true
+          }
+},
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.DataPath": {
+        "type": "object",
+        "properties": {
+          "DataStoreName": {
+            "type": "string",
+            "nullable": true
+          },
+          "RelativePath": {
+            "type": "string",
+            "nullable": true
+          },
+          "SqlDataPath": {
+            "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.SqlDataPath"
+} },
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.RegisteredDataSetReference": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "nullable": true
+}, "Name": {
+            "type": "string",
+            "nullable": true
+          },
+
+           "Version": {
+            "type": "string",
+            "nullable": true
+} },
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.SavedDataSetReference": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "nullable": true
+} },
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.DataSetDefinitionValue": {
+        "type": "object",
+        "properties": {
+          "LiteralValue": {
+            "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.DataPath"
+          },
+          "DataSetReference": {
+            "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.RegisteredDataSetReference"
+          },
+          "SavedDataSetReference": {
+            "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.SavedDataSetReference"
+          }
+},
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.NodeCompositionMode": {
+        "enum": [
+0, 1, 2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Microsoft.Aether.AEVA.DataContracts.AzDevOpsCallBackInfo": {
+        "type": "object",
+        "properties": {
+          "PlanUri": {
+            "type": "string",
+            "nullable": true
+          },
+          "ProjectId": {
+            "type": "string",
+            "nullable": true
+          },
+          "HubName": {
+            "type": "string",
+            "nullable": true
+          },
+          "PlanId": {
+            "type": "string",
+            "nullable": true
+          },
+          "AuthToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "AuthTokenId": {
+            "type": "string",
+            "nullable": true
+          },
+          "JobId": {
+            "type": "string",
+            "nullable": true
+          },
+          "TaskInstanceId": {
+"type": "string",
+
+             "nullable": true
+          }
+},
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.PipelineSubmissionInfo": {
+        "type": "object",
+        "properties": {
+          "ExperimentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "DisplayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "RunId": {
+            "type": "string",
+            "nullable": true
+          },
+          "Description": {
+            "type": "string",
+            "nullable": true
+          },
+          "RunSource": {
+            "type": "string",
+            "nullable": true
+          },
+          "RunType": {
+            "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.RunType"
+          },
+          "ParameterAssignments": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "DataPathAssignments": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.LegacyDataPath"
+            },
+            "nullable": true
+          },
+          "DataSetDefinitionValueAssignments": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.DataSetDefinitionValue"
+},
+            "nullable": true
+          },
+          "ScheduleId": {
+            "type": "string",
+            "nullable": true
+          },
+          "ContinueRunOnStepFailure": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "tags": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "StepTags": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+
+     "Properties": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "nullable": true
+    },
+    "StepProperties": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "nullable": true
+    },
+    "AzDevOpsCallBackInfo": {
+      "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.AzDevOpsCallBackInfo"
+} },
+  "additionalProperties": false
+},
+"Microsoft.Aether.AEVA.DataContracts.PipelineRunStatusCode": {
+  "enum": [
+0, 1, 2, 3, 4
+  ],
+  "type": "integer",
+  "format": "int32"
+},
+"Microsoft.Aether.AEVA.DataContracts.PipelineRunStatus": {
+  "type": "object",
+  "properties": {
+    "StatusCode": {
+      "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineRunStatusCode"
+    },
+    "StatusDetail": {
+      "type": "string",
+      "nullable": true
+    },
+    "CreationTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "EndTime": {
+      "type": "string",
+      "format": "date-time",
+      "nullable": true
+} },
+  "additionalProperties": false
+},
+"Microsoft.Aether.AEVA.DataContracts.UploadState": {
+  "enum": [
+0, 1, 2, 3
+  ],
+  "type": "integer",
+  "format": "int32"
+},
+"Microsoft.Aether.AEVA.DataContracts.CreatedBy": {
+  "type": "object",
+  "properties": {
+    "UserObjectId": {
+      "type": "string",
+      "nullable": true
+    },
+    "UserTenantId": {
+      "type": "string",
+      "nullable": true
+    },
+    "UserName": {
+
+             "type": "string",
+            "nullable": true
+          }
+},
+        "additionalProperties": false
+      },
+      "Microsoft.Aether.AEVA.DataContracts.EntityStatus": {
+        "enum": [
+0, 1, 2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Microsoft.Aether.AEVA.DataContracts.PipelineRunEntity": {
+        "type": "object",
+        "properties": {
+          "Description": {
+            "type": "string",
+            "nullable": true
+          },
+          "Status": {
+            "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.PipelineRunStatus"
+          },
+          "GraphId": {
+            "type": "string",
+            "nullable": true
+          },
+          "IsSubmitted": {
+            "type": "boolean"
+          },
+          "HasErrors": {
+            "type": "boolean"
+          },
+          "HasWarnings": {
+            "type": "boolean"
+          },
+          "UploadState": {
+            "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.UploadState"
+          },
+          "ParameterAssignments": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "DataPathAssignments": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.LegacyDataPath"
+            },
+            "nullable": true
+          },
+          "DataSetDefinitionValueAssignments": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref":
+"#/components/schemas/Microsoft.Aether.AEVA.DataContracts.DataSetDefinitionValue"
+},
+            "nullable": true
+          },
+          "RunHistoryExperimentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "DisplayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "PipelineRunId": {
+            "type": "string",
+            "nullable": true
+},
+
+ "PipelineId": {
+  "type": "string",
+  "nullable": true
+},
+"PipelineEndpointId": {
+  "type": "string",
+  "nullable": true
+},
+"RunSource": {
+  "type": "string",
+  "nullable": true
+},
+"RunType": {
+  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.RunType"
+},
+"TotalRunSteps": {
+  "type": "integer",
+  "format": "int32"
+},
+"ScheduleId": {
+  "type": "string",
+  "nullable": true
+},
+"RunUrl": {
+  "type": "string",
+  "nullable": true
+}, "tags": {
+  "type": "object",
+  "additionalProperties": {
+    "type": "string"
+  },
+  "nullable": true
+},
+"StepTags": {
+  "type": "object",
+  "additionalProperties": {
+    "type": "string"
+  },
+  "nullable": true
+},
+"Properties": {
+  "type": "object",
+  "additionalProperties": {
+    "type": "string"
+  },
+  "nullable": true
+},
+"StepProperties": {
+  "type": "object",
+  "additionalProperties": {
+    "type": "string"
+  },
+  "nullable": true
+},
+"CreatedBy": {
+  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.CreatedBy"
+},
+"PreserveSubGraphs": {
+  "type": "boolean"
+},
+"RootPipelineRunId": {
+  "type": "string",
+  "nullable": true
+},
+"EntityStatus": {
+  "$ref": "#/components/schemas/Microsoft.Aether.AEVA.DataContracts.EntityStatus"
+},
+"Id": {
+  "type": "string",
+  "nullable": true
+}, "Etag": {
+  "type": "string",
+  "nullable": true
+ 
+},
+          "CreatedDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "LastModifiedDate": {
+            "type": "string",
+            "format": "date-time"
+} },
+        "additionalProperties": false
+      }
+} }
+}
