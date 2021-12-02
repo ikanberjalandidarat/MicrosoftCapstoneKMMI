@@ -38,7 +38,7 @@ and various algorithms, this project will be done using one Python notebook that
 - Preprocessing and cleaning the data 
 - Outlier detection in variable 'price'
 - Exploratory data analysis 
-- Using feature engineering with numerous algorithms to then combine the best suited to choose, (from 19 features to 10), using Pearson,	Chi-2m,	RFE, and	Random Forest
+- Using feature engineering with numerous algorithms to then combine the best suited to choose, (from 19 features to 10), using Pearson,	Chi-2,	RFE, and	Random Forest
 - Applying machine learning algorithms to predict 'price' of the property sold based on its features.
 - Approaches used are: Standardized Linear Regression, (Hyperparameter Tuned) Random Forest Regression, Robust Regression (Using RANSAC), Stochastic Gradient Descent, Elastic Net Regression, Artificial Neural Network (Sequential model using RelU activation function) 
 - Then the results will be evaluated by creating a dataframe that shows predicted vs actual values, alongside that Mean Squared Erorr (MSE), Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and R squared value (To see how the model fits the data, the higher the R squared value, the better). -> The results of all the algorithms used will be evaluated with these four metrics and then applied to one dataframe and exported to excel.
