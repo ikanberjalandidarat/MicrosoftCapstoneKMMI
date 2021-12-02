@@ -6,6 +6,7 @@
 - Then run the RF & LM python notebook
 - Then run the vanilla Linear Regression notebook 
 
+**IMPORTANT**: In the dataset folder, there is the FY21_Encoded which is the one hot encoded data with selected features. Within the Python Notebook, you can also see conclusive statements about the code and the project in general. 
 
 ### Power BI 
 
