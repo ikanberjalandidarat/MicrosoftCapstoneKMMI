@@ -1,7 +1,13 @@
 # Microsoft Capstone KMMI
 This repository will be used for Microsoft's capstone project in regards to its Data and Artificial Intelligence program from Kampus Merdeka. 
-Made by Zhafira E. Fawnia, Computer Science, Universitas Gadjah Mada
-18/423121/PA/18204
+
+**Made by Zhafira E. Fawnia, Computer Science, Universitas Gadjah Mada.**
+**18/423121/PA/18204**
+
+```diff
+@@ Report link: https://bit.ly/ZhafiraMicrosoftReport @@
++ Status: In progress
+```
 
 [1] Project using MariBelajar.org score-card (fiscal year 2020/2021) dataset 
 
