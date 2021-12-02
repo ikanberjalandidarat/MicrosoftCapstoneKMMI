@@ -14,3 +14,7 @@ https://ml.azure.com/experiments/id/f6c93c05-2913-4f87-a936-a329ebf25155?wsid=/s
 ### Pipeline Architecture Preview 
 
 <img src = 'https://i.postimg.cc/Vsn4GqwX/Screenshot-2021-12-02-at-15-40-09.png'>
+
+### Real Time Inference Pipeline 
+
+<img src = 'https://i.postimg.cc/kgpxXG9n/Screenshot-2021-12-02-at-15-42-27.png'>
