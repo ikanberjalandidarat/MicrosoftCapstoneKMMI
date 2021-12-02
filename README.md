@@ -4,6 +4,11 @@ Made by Zhafira E. Fawnia, Computer Science, Universitas Gadjah Mada
 18/423121/PA/18204
 
 [1] Project using MariBelajar.org score-card (fiscal year 2020/2021) dataset 
+
+<p align="center">
+  <img src="https://media-exp1.licdn.com/dms/image/C561BAQF3W8YHh053JA/company-background_10000/0/1594804641455?e=1638518400&v=beta&t=m1V0YlvdHrNhZEwbnH-cbDTNO-TcUHkMTei20DV6tlc" width="350" title="hover text">
+</p>
+
 This project's purpose is ML-Ops Suitability Check: A Business Intelligence Approach, where it will be done with using **three** different Python Notebooks:
 - Preprocessing and loading data (Involves one hot encoding) (Run this first)
 - Using cleaned and encoded data through feature selection to be inputted to Random Forest & Linear Models (Run this second)
@@ -12,7 +17,16 @@ This project's purpose is ML-Ops Suitability Check: A Business Intelligence Appr
 Using Power BI: 
 - Creating a dashboard for both Fiscal 2020 and 2021 (Mobile version friendly) 
 
+
+
+
 [2] Project using MariBelajar.org's Business dataset of property sales
+
+<p align="center">
+  <img src="https://storage.googleapis.com/kaggle-datasets-images/128/270/d149695d1f9a97ec54cf673be6430ad7/dataset-original.jpg" width="350" title="hover text">
+</p>
+
+
 This project's purpose is within the scope of Machine Learning Property Prices Prediction Based on Combinatory Features Selection
 and various algorithms, this project will be done using one Python notebook that consists of:
 - Preprocessing and cleaning the data 
