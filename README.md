@@ -15,7 +15,7 @@ This repository will be used for Microsoft's capstone project in regards to its 
 [1] Project using MariBelajar.org score-card (fiscal year 2020/2021) dataset 
 
 <p align="center">
-  <img src="https://media-exp1.licdn.com/dms/image/C561BAQF3W8YHh053JA/company-background_10000/0/1594804641455?e=1638518400&v=beta&t=m1V0YlvdHrNhZEwbnH-cbDTNO-TcUHkMTei20DV6tlc" width="350" title="hover text">
+  <img src="https://media-exp1.licdn.com/dms/image/C561BAQF3W8YHh053JA/company-background_10000/0/1594804641455?e=1638781200&v=beta&t=1lA_O8iGqKQMYgWXf3RJDyuYRUMJ_5VYkBVz9NgSll0" width="350" title="hover text">
 </p>
 
 This project's purpose is ML-Ops Suitability Check: A Business Intelligence Approach, where it will be done with using **three** different Python Notebooks:
