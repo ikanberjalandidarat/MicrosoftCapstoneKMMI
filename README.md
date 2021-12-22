@@ -14,10 +14,6 @@ This repository will be used for Microsoft's capstone project in regards to its 
 
 [1] Project using MariBelajar.org score-card (fiscal year 2020/2021) dataset 
 
-<p align="center">
-  <img src="https://media-exp1.licdn.com/dms/image/C561BAQF3W8YHh053JA/company-background_10000/0/1594804641455?e=1638781200&v=beta&t=1lA_O8iGqKQMYgWXf3RJDyuYRUMJ_5VYkBVz9NgSll0" width="350" title="hover text">
-</p>
-
 This project's purpose is ML-Ops Suitability Check: A Business Intelligence Approach, where it will be done with using **three** different Python Notebooks:
 - Preprocessing and loading data (Involves one hot encoding) (Run this first)
 - Using cleaned and encoded data through feature selection to be inputted to Random Forest & Linear Models (Run this second)
@@ -30,11 +26,6 @@ Using Power BI:
 
 
 [2] Project using MariBelajar.org's Business dataset of property sales
-
-<p align="center">
-  <img src="https://storage.googleapis.com/kaggle-datasets-images/128/270/d149695d1f9a97ec54cf673be6430ad7/dataset-original.jpg" width="350" title="hover text">
-</p>
-
 
 This project's purpose is within the scope of Machine Learning Property Prices Prediction Based on Combinatory Features Selection
 and various algorithms, this project will be done using one Python notebook that consists of:
