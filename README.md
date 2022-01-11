@@ -6,7 +6,7 @@ This repository will be used for Microsoft's capstone project in regards to its 
 
 ```diff
 @@ Report link: https://bit.ly/ZhafiraMicrosoftReport @@
-! Status: In progress
++ Status: Completed
 
 @@ Video Link (Backup G-Drive): https://bit.ly/MicrosoftCapstoneVideo @@
 + Status: Uploaded
